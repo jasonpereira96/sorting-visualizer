@@ -1,0 +1,2 @@
+export const MERGESORT = 'MERGESORT'
+export const BUBBLESORT = 'BUBBLESORT'

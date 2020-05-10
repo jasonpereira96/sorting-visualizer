@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Toolbar from './components/Toolbar'
+import Box from './components/Box'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+	render() {
+		return (
+			<div id='full-screen'>
+				<Toolbar></Toolbar>
+				<div id='background'>
+					<Box></Box>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default App;
