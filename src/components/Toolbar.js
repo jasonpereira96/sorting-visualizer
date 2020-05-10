@@ -1,13 +1,12 @@
 import React from 'react'
-import bubbleSort from './../algorithms/bubblesort'
-import mergeSort from './../algorithms/mergesort'
 import { connect } from 'react-redux'
 import { arrayChange, disableControls, enableControls, changeSpeed, changeAlgo } from './../actions/actions'
 import { generateArray } from './../utils/utils'
 import { getSortFn } from './../utils/utils'
 import {
     MERGESORT,
-    BUBBLESORT
+    BUBBLESORT,
+    HEAPSORT
 } from './../constants/constants'
 
 class Toolbar extends React.Component {
@@ -123,6 +122,7 @@ class Toolbar extends React.Component {
                 <select ref={this.selectRef} onChange={this.onAlgoChage}>
                     <option value={MERGESORT}>mergesort</option>
                     <option value={BUBBLESORT}>bubblesort</option>
+                    <option value={HEAPSORT}>heapsort</option>
                 </select>
             </div>
 

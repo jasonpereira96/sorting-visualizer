@@ -1,57 +1,95 @@
-body,html, #root {
-        width: 100%;
-        height: 100%;
-        color: white;
-    }
+body, html, #root {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
 
-    #full-screen {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+#full-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-    #toolbar {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        background-color: darkslategrey;
-    }
-    #toolbar > div {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* padding: 50px; */
-        padding-right: 50px;
-        padding-left: 50px;
-    }
+#toolbar {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(98, 00, 238);
+}
 
-    #background {
-        flex: 4;
-        background-color: skyblue;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+#toolbar>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 50px; */
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
-    #box {
-        background-color: forestgreen;
-        width: 50%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .element {
-        background-color: darksalmon;
-        height: 10px;
-        border: 2px solid forestgreen;
-        flex: 1;
-    }
-    .element:hover {
-        background-color: red;
-    }
-    
+#background {
+    flex: 4;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.element {
+    background-color: darksalmon;
+    height: 10px;
+    border: 1px solid white;
+    flex: 1;
+    border-radius: 100px 100px 0 0;
+}
+
+.element:hover {
+    background-color: red;
+}
+
+#speed,#length {
+    background-color: red;
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    height: 2px;
+    /* Specified height */
+    background: white;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+}
+
+#speed::-webkit-slider-thumb , #length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 15px;
+    /* Set a specific slider handle width */
+    height: 15px;
+    /* Slider handle height */
+    border-radius: 7.5px;
+    background: white;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+button {
+    padding: 5px;
+    background-color: white;
+    color: rgba(98, 00, 238);
+    border-radius: 15px;
+}

@@ -1,9 +1,11 @@
 import {
     MERGESORT,
-    BUBBLESORT
+    BUBBLESORT,
+    HEAPSORT
 } from './../constants/constants'
 import mergeSort from './../algorithms/mergesort'
 import bubbleSort from './../algorithms/bubblesort'
+import heapSort from './../algorithms/heapsort'
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -25,6 +27,8 @@ export function getSortFn(algo) {
             return mergeSort;
         case BUBBLESORT:
             return bubbleSort;
+        case HEAPSORT:
+            return heapSort;
         default:
             return mergeSort;
     }
