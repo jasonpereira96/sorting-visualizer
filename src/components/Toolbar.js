@@ -6,7 +6,8 @@ import { getSortFn } from './../utils/utils'
 import {
     MERGESORT,
     BUBBLESORT,
-    HEAPSORT
+    HEAPSORT,
+    QUICKSORT
 } from './../constants/constants'
 
 class Toolbar extends React.Component {
@@ -123,6 +124,7 @@ class Toolbar extends React.Component {
                     <option value={MERGESORT}>mergesort</option>
                     <option value={BUBBLESORT}>bubblesort</option>
                     <option value={HEAPSORT}>heapsort</option>
+                    <option value={QUICKSORT}>quicksort</option>
                 </select>
             </div>
 

@@ -21,4 +21,3 @@ export default function bubbleSort(inputArr) {
     return result;
 }
 
-// console.log(bubbleSort([5,3,1,4,6]));
