@@ -1,6 +1,6 @@
 # Sorting Visualizer
 
-A visualizer for common sorting algorithms built with [React][https://reactjs.org/] and [Redux](https://redux.js.org/).
+A visualizer for common sorting algorithms built with [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
 You can play with the size and speed of the sorting.
 
 Check out a demo [here](https://jasonpereira96.github.io/sorting-visualizer/).
